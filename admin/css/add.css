@@ -1,0 +1,167 @@
+/* Reset some default browser styles */
+body, h2, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+/* Style the form container */
+form {
+    max-width: 450px;
+   height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Style the form heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style text inputs */
+input[type="text"],
+input[type="number"]
+ {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="number"] {
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+/* Style the file input */
+input[type="file"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 38%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+        .logo {
+            width: 70px;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        /* Navbar */
+        #navbar {
+            display: flex;
+            align-items: center;
+
+            top: 0px;
+            font-family: "Gill Sans Extrabold", sans-serif;
+            position: sticky;
+        }
+
+        /* Navbar :Logo and image */
+        #logo {
+            margin: 10px 34px;
+
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+        }
+
+        /* Navbar List styling */
+        #navbar ul {
+            display: flex;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+
+        #navbar {
+            z-index: 10;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+    

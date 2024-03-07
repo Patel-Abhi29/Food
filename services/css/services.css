@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: 	#ffe6e6;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    }
+
+.box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid brown;
+        padding: 20px; 
+        margin: 7px 30px;
+        border-radius: 23px;
+        background:	#7FFFD4;
+}
+.h-primary{
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 3.8rem;
+    /* padding: 12px; */
+  text-align: center;
+}
+.h-secondary{
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 2.3rem;
+    
+}
+
+    #services .box img{
+        height: 160px;
+        margin: auto;
+        display: flex;
+    
+        
+    }
+    #services .box p{
+        font-family: "Gill Sans Extrabold", sans-serif;
+        
+    }
+    
+    
+.box:hover{
+    transition:  0.3ms;
+    transform: scale(1.1);
+
+}
+
+.atag{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+    /* product card */
+.product{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    max-width: 40%;
+    border: 2px solid black;
+    margin: 40px;
+    align-items: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+    background-color: #ccffff;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.checked {
+    color: orange;
+  }

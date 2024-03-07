@@ -1,0 +1,284 @@
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+   max-width: 100%;
+}
+
+
+body {
+    background-color: #ffe6e6;
+    font-family: Arial, sans-serif;
+}
+.slide{
+    
+    overflow-x: hidden;
+}
+/* Header styles */
+.header {
+    background-color:  #ff6666;
+    color: #fff;
+    text-align: center;
+    padding: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header button{
+    background-color: #fff ;
+    color:  #ff6666;
+    border: none;
+    border-radius: 15px;
+    font-size: 26px; 
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    right: 80px;
+    
+}
+.header button:hover{
+        color: #e62e00;
+        background-color: #e6e6e6;
+    
+}
+
+/* Container for cards */
+.container-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 333px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s; 
+    margin-bottom: 20px;
+}
+
+.container:hover {
+    transform: scale(1.05); 
+}
+
+.container img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.container .container__text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+.container h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.container p {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.container .container_text_star {
+    color: #FFD700;
+    font-size: 18px; 
+    margin: 5px 0;
+}
+
+.container .container_text_timing_time h2 {
+    color: #ff6666;
+    font-size: 16px; 
+    margin-bottom: 5px;
+}
+
+.container .container_text_timing_time p {
+    color: #777;
+    font-size: 14px;
+}
+
+.container .btn {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quan{
+    width:40px;
+    height: 20px;
+}
+
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price p{
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; 
+    }
+}
+
+.logo{
+    width: 70px;
+    height: 100px;
+    border-radius: 20px;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+   
+    top: 0px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    position: sticky;
+}
+/* Navbar :Logo and image */
+#logo{
+margin: 10px 34px;
+
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px
+    ;
+}
+/* Navbar List styling */
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#navbar{
+    z-index: 10;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;    
+}
+
+.quantity{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000%;
+  
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* category */
+
+.category{
+    display: flex;
+    max-height: 40vh;
+    max-width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom:40px ;
+}
+.category img{
+    width: 400px;
+    border-radius: 100%;
+    border: 6px solid #ffe6e6;
+}
+.category a:hover img{
+    scale: 1.07;
+    border: 6px solid blueviolet;
+}
